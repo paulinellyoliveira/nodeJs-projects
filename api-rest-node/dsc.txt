@@ -1,0 +1,17 @@
+@@@@ NodeJs  #####
+node -v
+npm -v
+
+npm init -y
+npm install express
+## npm install -D nodemon
+code .
+
+node index.js -> npm run running
+docker ps -a (lista imagens docker)
+docker start mongodb
+
+## npm install mongoose
+## npm install require-dir
+## npm install mongoose-paginate
+## npm install cors
