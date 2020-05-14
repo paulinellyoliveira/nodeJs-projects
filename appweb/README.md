@@ -1,1 +1,1 @@
-Frontend aplication, using React, to access the project of API "api-rest-node", included in this repository.
+[Incomplete] - Frontend aplication, using React, to access the project of API "api-rest-node", included in this repository.
