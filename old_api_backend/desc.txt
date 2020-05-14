@@ -31,7 +31,6 @@ Usando o aplicativo Postman (ou similar), as seguintes URLs podem ser usadas par
 o front não está pronto:
   - Cadastrar:    localhost:3000/auth/register
   - Listar todos: localhost:3000/auth/allUser
-  - Listar um:    localhost:3000/auth/user/**
-  - Excluir:      localhost:3000/auth/remove/**
-  - Editar:       localhost:3000/auth/edit/**
-  ** necessário passar o ObjectID do usuário 
+  - Listar um:    localhost:3000/auth/user/:ObjectID
+  - Excluir:      localhost:3000/auth/remove/:ObjectID
+  - Editar:       localhost:3000/auth/edit/:ObjectID
