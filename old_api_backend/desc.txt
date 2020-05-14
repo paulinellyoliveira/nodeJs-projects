@@ -1,0 +1,37 @@
+Meu objetivo era criar uma API para realizar todas as funções do back end da aplicação, 
+como a comunicação com o banco de dados, além das operações para recuperar um usuário (método get); 
+adicionar (método post), editar (metodo put) e excluir (método delete). Em seguida o front end 
+seria desenvolvido (html, javascript etc.).
+
+As seguintes ferramentas foram utilizadas:
+ - Visual studio code - IDE;
+ - Node.JS;
+ - MongoDB - Banco de dados;
+ - NPM - gerenciador de pacotes;
+ - Pacote Express - tratativa de rotas e requisições HTTP;
+ - Pacote Body-parser - ponte entre o node e as informações em json, também parâmetros passados através de URLs;
+ - Pacote Mongoose - pacote para comunicação entre o node e o mongodb;
+
+
+No diretório raiz há um arquivo 'index.js', nesse arquivo é instanciado a aplicação
+além dos pacotes a serem utilizados. 
+No diretório src/database, o arquivo 'index.js' define a conexão com o banco.
+No diretório src/models, o arquivo 'user.js' é definido o schema do bd utilizado (id, first_name, last_name etc.).
+No diretório src/controlles, o arquivo 'authControllers.js', define as rotas que foram utilizadas para as operações 
+(inserir, atualizar, excluir).
+No diretório src/front ficou o esqueleto do front end, que seria terminado após a finalização do back end.
+
+Comandos:
+Primeiro, rodar o servidor MongoDB:
+	mongod
+Depois executar o servidor web:
+	npm run test
+	
+Usando o aplicativo Postman (ou similar), as seguintes URLs podem ser usadas para testar a aplicação, uma vez que 
+o front não está pronto:
+  - Cadastrar:    localhost:3000/auth/register
+  - Listar todos: localhost:3000/auth/allUser
+  - Listar um:    localhost:3000/auth/user/**
+  - Excluir:      localhost:3000/auth/remove/**
+  - Editar:       localhost:3000/auth/edit/**
+  ** necessário passar o ObjectID do usuário 
