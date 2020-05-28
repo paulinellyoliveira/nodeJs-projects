@@ -7,11 +7,19 @@ npm install express
 ## npm install -D nodemon
 code .
 
+
+sudo docker ps -a (lista imagens docker)
+sudo docker start mongodb
 node index.js -> npm run running
-docker ps -a (lista imagens docker)
-docker start mongodb
+
 
 ## npm install mongoose
 ## npm install require-dir
 ## npm install mongoose-paginate
 ## npm install cors
+
+
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt install mysql-workbench
+mysql-workbench
